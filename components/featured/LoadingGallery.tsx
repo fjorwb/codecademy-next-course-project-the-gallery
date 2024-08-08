@@ -1,3 +1,4 @@
 export default function LoadingGallery() {
-  return <p>Loading gallery...</p>
+  console.log('Loading Gallery');
+  return <p>Loading Gallery....</p>
 }

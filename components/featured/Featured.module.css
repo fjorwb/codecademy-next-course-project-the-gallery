@@ -16,9 +16,11 @@
   font-size: 1.25rem;
   font-weight: bold;
   width: 100%;
-  z-index: 2;
+  z-index: 10;
   font-family: var(--font-mono);
   text-align: center;
+  /* color: red; */
+  margin-top: 0.5rem;
 }
 .comments_section {
   background: #fffae5;

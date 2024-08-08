@@ -1,16 +1,29 @@
 .comments_section {
-  background: #fffae5;
-  padding: 1.5em;
+  background: #fffae550;
+  padding: 0.5em 1em;
   margin: 1.5em 0em;
-  margin-top: 0em;
-  padding-top: 0em;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
+  margin-top: 1em;
+  padding-top: 1em;
+  /* border-bottom-left-radius: 12px; */
+  /* border-bottom-right-radius: 12px; */
+  border-radius: 5px;
   width: 100%;
 }
 
 .comments {
   margin-bottom: 8px;
+  margin-top: 1rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+.newcommenttext {
+  color: rgb(114, 117, 109);
+  font-weight: 700;
+}
+.commenttext {
+  color: rgb(220, 220, 190);
+  font-weight: 700;
 }
 
 .comment_form {
@@ -23,7 +36,10 @@
 }
 
 .comments_date {
-  color: #9e9e9e;
+  color: #1f1d1d;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
 .post_button {
@@ -35,7 +51,7 @@
   display: inline-block;
   cursor: pointer;
   margin-right: 0.5rem;
-  background: #3a10e5;
+  background: rgb(99, 50, 28);
   color: #fffae5;
   font-size: 16px;
 }

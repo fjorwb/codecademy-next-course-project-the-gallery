@@ -9,7 +9,8 @@ export default function Nav() {
   const segments = useSelectedLayoutSegments()
   const lastSegment = segments[segments.length - 1]
   return (
-    <nav>
+    <nav className={styles.nav}>
+      <h1 className={styles.title}>Art Gallery Venue</h1>
       <ul className={styles.navUl}>
         <li className={styles.logo}>The Gallery</li>
         <li className={lastSegment ? '' : styles.selected}>

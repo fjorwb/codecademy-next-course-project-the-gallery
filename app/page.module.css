@@ -1,3 +1,28 @@
+.header,
+.footer {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  background-color: lightblue;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: lightgreen;
+  position: fixed;
+  bottom: 0;
+  z-index: 2;
+}
+
 .main {
   display: flex;
   flex-direction: column;
@@ -5,6 +30,8 @@
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
+  /* background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 0, 255)); */
+  background: sienna;
 }
 
 .description {

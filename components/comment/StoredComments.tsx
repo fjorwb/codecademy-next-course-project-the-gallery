@@ -10,10 +10,10 @@ export default async function StoredComments({ id }: StoredCommentsProps) {
   const commentData = await fetchCommentData(id)
 
   return (
-    <div className={styles.comment}>
+    <div className={styles.comments}>
       {commentData.map((comment) => (
         <div key={comment.id}>
-          <p>{comment.body}</p>
+          <p className={styles.commenttext}>{comment.body}</p>
           <p className={styles.comments_date}>
             {new Date(comment.timestamp).toLocaleDateString()}
           </p>

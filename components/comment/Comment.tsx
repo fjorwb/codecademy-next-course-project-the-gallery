@@ -22,16 +22,16 @@ export default function Comment() {
 
   return (
     <div className={styles.comments_section}>
-      <div>
-        {newComments.map((comment) => (
-          <div className={styles.comments} key={comment.id}>
-            <p>{comment.body}</p>
-            <p className={styles.comments_date}>
-              {new Date(comment.timestamp).toLocaleDateString('en-US', { timeZone: 'UTC' })}
-            </p>
-          </div>
-        ))}
-      </div>
+      {/* <div> */}
+      {newComments.map((comment) => (
+        <div className={styles.comments} key={comment.id}>
+          <p className={styles.newcommenttext}>{comment.body}</p>
+          <p className={styles.comments_date}>
+            {new Date(comment.timestamp).toLocaleDateString('en-US', { timeZone: 'UTC' })}
+          </p>
+        </div>
+      ))}
+      {/* </div> */}
       <NewCommentForm addComment={addComment} />
 
     </div>

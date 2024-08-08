@@ -23,6 +23,7 @@ export default function UrlBar({ baseURL }: { baseURL: string }) {
         name='url'
         value={inputURL}
         onChange={(e) => setInputURL(e.target.value)}
+        placeholder='Enter URL...'
       />
     </form>
   )

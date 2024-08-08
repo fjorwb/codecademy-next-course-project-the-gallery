@@ -23,7 +23,7 @@ export default function NewCommentForm({ addComment }: NewCommentFormProps) {
   return (
     <div>
       <form className={styles.comment_form} onSubmit={handleSubmit}>
-        <textarea className={styles.comment_form_text} name="body" />
+        <textarea className={styles.comment_form_text} name="body" placeholder='enter comment...' />
         <button className={styles.post_button} type="submit">Post</button>
       </form>
     </div>

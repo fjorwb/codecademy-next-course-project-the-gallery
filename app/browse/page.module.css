@@ -3,12 +3,19 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  /* padding: 6rem; */
+  /* min-height: 100vh; */
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  padding: 2rem;
+  background: orange;
 }
 
 .search_result {
   background: pink;
+  position: absolute;
+  top: 85px;
 }
 
 .description {

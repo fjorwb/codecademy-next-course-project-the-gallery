@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning={true}>
       <body>
         <div className="urlBar">
           <UrlBar baseURL="http://localhost:4001" />

@@ -1,0 +1,22 @@
+.searchResult {
+  margin: 1.5em auto;
+  text-align: center;
+}
+
+.title {
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  font-size: 1.25rem;
+  font-weight: bold;
+  max-width: var(--max-width);
+  width: 100%;
+  z-index: 2;
+  font-family: var(--font-mono);
+  margin-top: 0.5em;
+}
+
+.searchedImage {
+  width: 50%;
+  height: 50%;
+}

@@ -31,10 +31,15 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  /* padding: 6rem; */
   min-height: 100vh;
   /* background: linear-gradient(to bottom, rgb(255, 0, 0), rgb(0, 0, 255)); */
   background: sienna;
+  position: absolute;
+  margin: 0 auto;
+  top: 95px;
+  /* left: 100px; */
+  width: 100%;
 }
 
 .description {

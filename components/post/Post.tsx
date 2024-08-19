@@ -19,12 +19,16 @@ export default async function Post({ id }: PostProps) {
       <div className={styles.searchResult}>
         <Image
           className={styles.searchedImage}
-          src={data.primaryImage == '' ? '/blank.jpg' : data.primaryImage}
+          src={data.primaryImage === '' ? '/blank.jpg' : data.primaryImage}
           alt={data.title}
           width={500}
           height={500}
         />
         <p className={styles.title}>{data.title}</p>
+        <p className={styles.author}>{data.artistDisplayName}</p>
+        <p className={styles.nationality}>{data.artistNationality}</p>
+
+        <p className={styles.date}>{data.objectDate}</p>
       </div>
     )
 

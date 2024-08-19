@@ -14,8 +14,10 @@ export default async function Browse({ searchParams }: { searchParams: { searchT
   console.log(query);
   return (
     <main className={styles.main}>
-      <Search placeholder={query} />
-      <p className={styles.search_result}>Search results for {query}:</p>
+      <div className={styles.search_container}>
+        <Search placeholder={query} />
+        <p className={styles.search_result}>Search results for {query}:</p>
+      </div>
       <Suspense fallback={<p>Loading items...</p>}>
         <SearchResults query={query} />
       </Suspense>
@@ -33,7 +35,7 @@ async function SearchResults({ query }: { query: string }) {
   )
   // console.log(randomObjectIDs);
   return (
-    <div>
+    <div className={styles.search_results_container}>
       {randomObjectIDs.map((id: number) => (
         <Suspense key={id} fallback={<p>Loading item...</p>}>
           <Post id={id} />

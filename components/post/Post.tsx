@@ -16,20 +16,22 @@ export default async function Post({ id }: PostProps) {
   return (
 
     error ? null : (
-      <div className={styles.searchResult}>
-        <Image
-          className={styles.searchedImage}
-          src={data.primaryImage === '' ? '/blank.jpg' : data.primaryImage}
-          alt={data.title}
-          width={500}
-          height={500}
-        />
-        <p className={styles.title}>{data.title}</p>
-        <p className={styles.author}>{data.artistDisplayName}</p>
-        <p className={styles.nationality}>{data.artistNationality}</p>
+      data.primaryImage === '' ? null :
+        <div className={styles.searchResult}>
+          <Image
+            className={styles.searchedImage}
+            src={data.primaryImage === '' ? '/blank.png' : data.primaryImage}
+            width={200}
+            height={200}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            alt={data.title}
+          />
+          <p className={styles.title}>{data.title}</p>
+          <p className={styles.author}>{data.artistDisplayName}</p>
+          <p className={styles.nationality}>{data.artistNationality}</p>
 
-        <p className={styles.date}>{data.objectDate}</p>
-      </div>
+          <p className={styles.date}>{data.objectDate}</p>
+        </div>
     )
 
   )

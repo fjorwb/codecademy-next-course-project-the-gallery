@@ -11,6 +11,8 @@ export const metadata: Metadata = {
   description: 'Web app for browsing the Met Museum of Art public collection.',
 }
 
+export const runtime = 'edge'
+
 export default function RootLayout({
   children,
 }: {
